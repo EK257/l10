@@ -9,9 +9,7 @@ namespace l10
 
         private void button1_Click(object sender, EventArgs e)
         {
-            String name = textBox1.Text.Trim();
-
-            label2.Text = SayHelloTo(name);
+            label1.Text = SayHelloTo("Tom") + "\n" + SayHelloTo("Bob") + "\n" + SayHelloTo("Alice");
         }
         private String SayHelloTo(String name)
         {
