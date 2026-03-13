@@ -1,4 +1,4 @@
-﻿namespace l10
+namespace l10
 {
     partial class Form1
     {
@@ -28,56 +28,36 @@
         /// </summary>
         private void InitializeComponent()
         {
-            label1 = new Label();
-            textBox1 = new TextBox();
             button1 = new Button();
-            label2 = new Label();
+            label1 = new Label();
             SuspendLayout();
+            // 
+            // button1
+            // 
+            button1.Location = new Point(12, 12);
+            button1.Name = "button1";
+            button1.Size = new Size(128, 23);
+            button1.TabIndex = 2;
+            button1.Text = "Вывести";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(12, 9);
+            label1.Location = new Point(12, 47);
             label1.Name = "label1";
-            label1.Size = new Size(31, 15);
-            label1.TabIndex = 0;
-            label1.Text = "Имя";
-            // 
-            // textBox1
-            // 
-            textBox1.Location = new Point(12, 27);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(128, 23);
-            textBox1.TabIndex = 1;
-            // 
-            // button1
-            // 
-            button1.Location = new Point(12, 56);
-            button1.Name = "button1";
-            button1.Size = new Size(128, 23);
-            button1.TabIndex = 2;
-            button1.Text = "Далее";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Location = new Point(12, 104);
-            label2.Name = "label2";
-            label2.Size = new Size(16, 15);
-            label2.TabIndex = 3;
-            label2.Text = "...";
+            label1.Size = new Size(16, 15);
+            label1.TabIndex = 3;
+            label1.Text = "...";
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(241, 141);
-            Controls.Add(label2);
-            Controls.Add(button1);
-            Controls.Add(textBox1);
+            ClientSize = new Size(194, 128);
             Controls.Add(label1);
+            Controls.Add(button1);
             Name = "Form1";
             Text = "Form1";
             ResumeLayout(false);
@@ -89,6 +69,5 @@
         private Label label1;
         private TextBox textBox1;
         private Button button1;
-        private Label label2;
     }
 }
